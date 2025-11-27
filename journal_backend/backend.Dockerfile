@@ -16,7 +16,7 @@ FROM eclipse-temurin:21-jdk
 WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
 
-EXPOSE 2020
+EXPOSE 2000
  # backend port no
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
